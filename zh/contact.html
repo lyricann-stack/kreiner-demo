@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>联系我们与获取报价 | Kreiner</title>
-<meta name="description" content="向 Kreiner 询价——浴缸与淋浴盆 OEM/ODM 制造商。我们将在 24 小时内回复。">
-<link rel="stylesheet" href="../style.css">
+<title>联系我们 — 获取报价或预约回电 | Kreiner</title>
+<meta name="description" content="向 Kreiner 询价或预约回电——浴缸与淋浴盆 OEM/ODM 制造商。我们将在 24 小时内回复。">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">首页</a> / 联系我们</div>
-    <h1>联系我们与获取报价</h1>
+    <h1>联系我们 — 获取报价或预约回电</h1>
     <p>工作日 24 小时内回复。</p>
   </div>
 </section>
@@ -38,8 +38,8 @@
     <div class="grid c2">
       <div>
         <h2 class="sec" style="font-size:24px">发送询盘</h2>
-        <p class="sec-sub"><span class="todo">TODO-C04 Static demo in v0.1; production version connects CRM + email notifications + file upload + reCAPTCHA</span></p>
-        <form class="inquiry" onsubmit="alert('v0.1 演示表单，后端尚未连接');return false;">
+        <p class="sec-sub"><span class="todo">TODO-C04 Static demo in v0.2; production version connects CRM + email notifications + file upload + reCAPTCHA</span></p>
+        <form class="inquiry" onsubmit="alert('v0.2 演示表单，后端尚未连接');return false;">
           <div><label>姓名*</label><input required></div>
           <div><label>公司*</label><input required></div>
           <div><label>邮箱*</label><input type="email" required></div>
@@ -54,12 +54,27 @@
         </form>
       </div>
       <div>
+        <div class="callback-card" id="request-call" style="margin-bottom:28px">
+          <h3>预约回电</h3>
+          <p class="note">更想直接沟通？留下您的电话与方便接听的时间，我们的销售团队将在一个工作日内回电。 <span class="todo">TODO-C08 Callback form backend not connected (static demo)</span></p>
+          <form class="inquiry" onsubmit="alert('v0.2 演示表单，后端尚未连接');return false;">
+            <div><label>姓名*</label><input required></div>
+            <div><label>公司</label><input></div>
+            <div class="full"><label>电话 / WhatsApp*</label><input required placeholder="+86 ..."></div>
+            <div><label>国家与时区*</label><input required placeholder="例：中国，GMT+8"></div>
+            <div><label>方便时段</label>
+              <select><option>上午（9–12）</option><option>下午（12–6）</option><option>晚间（6–9）</option><option>任何时间</option></select>
+            </div>
+            <div class="full"><button class="btn" type="submit">预约回电</button></div>
+          </form>
+        </div>
         <h2 class="sec" style="font-size:24px">直接联系渠道</h2>
         <table class="spec">
           <tr><th>邮箱</th><td><span class="todo">TODO-C01 sales@ (to be created once domain is confirmed)</span></td></tr>
           <tr><th>WhatsApp</th><td><span class="todo">TODO-C02 +86 / +66 / +852 lines pending</span></td></tr>
           <tr><th>微信</th><td><span class="todo">TODO-C07 QR code</span></td></tr>
           <tr><th>香港办公室</th><td><span class="todo">TODO-C05a Hong Kong office address pending</span></td></tr>
+          <tr><th>中国 — 主要生产基地</th><td><span class="todo">TODO-C05d China manufacturing hub address pending (for client audits, with map)</span></td></tr>
           <tr><th>泰国工厂</th><td><span class="todo">TODO-C05b Thai factory address pending (for client audits, with Google Maps)</span></td></tr>
           <tr><th>捷克 — 总部</th><td>Kreiner Exklusiv s.r.o.<br>Tylova 49, 301 00 Plzeň, Czech Republic<br>公司编号：25240731 · 增值税号：CZ25240731</td></tr>
           <tr><th>捷克 — 工厂</th><td>Tovární 736, 330 12 Horní Bříza, Czech Republic<br>电话：+420 377 830 131<br>邮箱：badewannen@kreiner.cz<br><em>可预约参观工厂并提供样品展示。</em></td></tr>
@@ -74,13 +89,14 @@
 
 <section class="block soft">
   <div class="container">
+    <p class="eyebrow">线下见面</p>
     <h2 class="sec">展会与我们见面</h2>
     <p class="sec-sub"><span class="todo">TODO-C03 12-month trade show calendar pending (KBIS 2027 is the strategic target; Canton Fair TBC)</span></p>
     <div class="ph">展会日历（Phase 2）</div>
   </div>
 </section>
 
-<div class="float-cta"><a class="wa" href="#" onclick="return false;">💬 WhatsApp</a><a href="#top">获取报价</a></div>
+<div class="float-cta"><a class="wa" href="#" onclick="return false;">💬 WhatsApp</a><a href="#request-call">预约回电</a></div>
 
 <footer class="site">
   <div class="container">
